@@ -10,7 +10,7 @@
        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAE0lEQVQIW2N48+bNfxhggLPwcgDQbi+YlZXTEQAAAABJRU5ErkJggg==);
        position: relative;
        min-height: 100vh;
-       font-family: "Alegreya",Georgia,serif;
+       font-family: "Roboto";
        color: #fff;
        font-weight: 300;
        overflow-wrap: break-word;
@@ -99,7 +99,47 @@
     left: 0;
     right: 0;
     border-top: 1px solid;
-}}
+}
+
+.posts--home {
+    padding-top: 0;
+}
+
+
+
+.posts__entry, .projects__entry {
+    margin: 2rem 0;
+    position: relative;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    border-right-width: 1.5rem;
+    font-family: "Roboto";
+    color: #444;
+}
+
+.colophon--home, .colophon--listing {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid;
+}
+
+.posts__entry-date, .projects__entry-role {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.posts__entry-title, .projects__entry-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+}
 
 .colophon {
     color: #aaa;
@@ -117,4 +157,15 @@
 
 .posts, .projects, .paginator, .post, .comments, .footnotes {
     max-width: 40rem;
+}
+
+li {
+    margin: 0.5rem 0;
+    line-height: 1.25;
+}
+
+.colophon {
+    color: #aaa;
+    font-size: 68.75%;
+    border-bottom: 2px solid #ccc;
 }
