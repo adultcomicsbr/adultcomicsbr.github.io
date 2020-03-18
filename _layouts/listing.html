@@ -13,12 +13,6 @@ layout: default
 
   {% assign pool = site.posts | where: filter, label %}
 
-{% elsif page.path == 'projects.html' %}
-  {% assign page_type = 'listing' %}
-  {% assign item_type = 'projects' %}
-  {% assign pool = site.projects %}
-  {% assign outbound_link_flag = ' target="_blank"' %}
-
 {% else %}
   {% assign page_type = 'home' %}
   {% assign item_type = 'posts' %}
@@ -31,12 +25,13 @@ layout: default
   <ul class="post__list {{ page_type }}">
           {% for post in site.posts limit 5 %}
           <li class="post__entry {{ page_type }}">
-            <time class="posts__entry-date {{ page_type }}" datetime="{{ item.date | date_to_xmlschema }}"></time>
+            <time class="posts__entry-date {{ page_type }}" datetime="{{ post.date | date_to_xmlschema }}"></time>
             {{ post.date | date: "%b %-d" }}
               <div class="post__entry-title {{ page_type }}">
                 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                  {{ post.content | truncatewords:40}}<br>
-                <a href="{{ post.url }}">LEIA MAIS</a><br><br>
+                  {{ post.content | truncatewords:40}}
+                  <br><br>
+                <p><a href="{{ post.url }}">LEIA MAIS</a></p><br><br>
           </li>
           {% endfor %}
   </ul>
