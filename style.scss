@@ -111,6 +111,10 @@
     text-align: justify;
 }
 
+.post__content p:first-element {
+    margin-top: 20px;
+}
+
 .post__jump {
     font-size: 35px;
     text-align: center;
