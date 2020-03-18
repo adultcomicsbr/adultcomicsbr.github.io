@@ -60,10 +60,28 @@
     padding-top: 350px;
 }
 
-.post__list {
+.post__entry {
+    border: 1px solid #eeeef5;
+    border-right-width: 1.3rem;
+    border-radius: 5px;
     padding: 1rem;
+    list-style: none;
 }
 
-.post__entry {
-    list-style: none;
+.posts__entry-date {
+    float: right;
+}
+
+.posts__category {
+    color: #973ef0;
+    font-size: xx-large;
+    font-family: Roboto black;
+}
+
+.posts__category:after {
+    content: "]";
+}
+
+.posts__category:before {
+    content: "[";
 }
