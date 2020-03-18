@@ -25,20 +25,20 @@ layout: default
   <ul class="post__list {{ page_type }}">
           {% for post in site.posts limit 5 %}
           <li class="post__entry {{ page_type }}">
-            
+
             <time class="posts__entry-date {{ page_type }}" datetime="{{ post.date | date_to_xmlschema }}">
               {{ post.date | date: "%b %-d" }}</time>
 
               <div class="posts__category {{ page_type }}">
                 {{ post.category }}</div>
 
-              <div class="post__entry-title {{ page_type }}">
+              <h3 class="post__entry-title {{ page_type }}">
                 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-              </div>
+              </h3>
 
-              <div class="post__content {{ page_type }}">{{ post.content | truncatewords:40}}</div><br><br>
-                <br><br>
-              <p><a href="{{ post.url }}">LEIA MAIS</a></p><br><br>
+              <div class="post__content {{ page_type }}">{{ post.content | truncatewords:40}}</div><br>
+                <br>
+              <p><a href="{{ post.url }}">LEIA MAIS</a></p>
           </li>
           {% endfor %}
   </ul>
