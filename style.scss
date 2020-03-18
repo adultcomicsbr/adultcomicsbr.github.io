@@ -8,13 +8,14 @@
        position: relative;
        min-height: 100vh;
        font-family: Roboto;
-       color: #fff;
+       color: #1A1A1A;
        font-weight: 300;
        overflow-wrap: break-word;
        line-height: 1.5;
+       margin: 0;
    }
 
-   @media (min-width: 900px) {
+@media (min-width: 900px) {
 
 .backdrop--home, .backdrop--listing {
     background-color: transparent;
