@@ -114,6 +114,7 @@
     color: #973ef0;
     font-size: xx-large;
     font-family: Roboto black;
+    margin-top: -15px;
 }
 
 .posts__entry-category:after {
@@ -158,6 +159,19 @@
     font-size: 2rem;
     font-weight: 700;
     margin-top: 3rem;
+}
+
+.posts__entry-title a {
+    color: #181420;
+    font-size: 50px;
+    display: block;
+}
+
+.posts__entry-teaser {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
 }
 
 }
