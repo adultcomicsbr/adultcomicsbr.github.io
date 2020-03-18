@@ -26,15 +26,14 @@ layout: default
 
 {% endif %}
 
-<main class="post post--{{ page_type }}" role="main">
-  <h2 class="post__heading post--{{ page_type }}__heading">{{ page.title }}</h2>
+<main class="post {{ page_type }}" role="main">
 
-  <ul class="post__list post--{{ page_type }}__list">
+  <ul class="post__list {{ page_type }}">
           {% for post in site.posts limit 5 %}
-          <li class="post__entry post--{{ page_type }}__entry">
-            <time class="posts__entry-date posts__entry-date--{{ page_type }}" datetime="{{ item.date | date_to_xmlschema }}">
+          <li class="post__entry {{ page_type }}">
+            <time class="posts__entry-date {{ page_type }}" datetime="{{ item.date | date_to_xmlschema }}">
             {{ item.date | date: "%b %-d" }}
-              <div class="post__entry-title post__entry-title--{{ page_type }}">
+              <div class="post__entry-title {{ page_type }}">
                 <a href="{{ site.baseurl }}{{ post.url }}"{{ outbound_link_flag }}>{{ post.title }}</a>
                   {{ post.content | truncatewords:75}}<br>
              <a href="{{ post.url }}">LEIA MAIS</a><br>
