@@ -41,21 +41,13 @@
 }
 
 .header {
-  background-image: url("{{ site.baseurl }}{{ site.banner }}");
-  box-shadow: 0 0 3px #333;
-  @include transition(top, 0, 200ms);
-  left: 0;
-  right: 0;
-
-  @include mobile-only {
-    max-width: inherit; // don't exceed body width (and pass down to shadow overlay)
-    position: fixed;
-    padding: 1.5rem 0;
-    background-size: 120.5%;
-    background-position: 0 25%;
-    z-index: 1; // pull-down nav: force rest of page below shadow overlay
-
-    &.hidden { top: -7.2rem; /* activated on scrolldown (ui.js) */ }
+    background: #181420;
+    box-shadow: 0 0 3px #333;
+    top: 0;
+    transition: top 200ms;
+    will-change: top;
+    left: 0;
+    right: 0;
   }
 
   @include tablet-portrait-up {
