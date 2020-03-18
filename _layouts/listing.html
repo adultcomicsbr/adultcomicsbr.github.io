@@ -35,7 +35,7 @@ layout: default
             {{ item.date | date: "%b %-d" }}
               <div class="post__entry-title {{ page_type }}">
                 <a href="{{ site.baseurl }}{{ post.url }}"{{ outbound_link_flag }}>{{ post.title }}</a>
-                  {{ post.content | truncatewords:75}}<br>
+                  {{ post.content | truncatewords:20}}<br>
              <a href="{{ post.url }}">LEIA MAIS</a><br>
          </li>
       {% endfor %}
