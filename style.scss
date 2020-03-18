@@ -33,20 +33,22 @@
 .posts, .projects, .paginator, .post, .comments, .footnotes, .backdrop {
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
 }
 
 .header--home, .header--listing {
-    height: 2rem;
+    height: 2.5rem;
 }
 
 .header {
     background: #181420;
     box-shadow: 0 0 3px #333;
     top: 0;
-    transition: top 200ms;
     will-change: top;
     left: 0;
     right: 0;
+    position: absolute;
+    margin-top: -20px;
 }
 
 .nav__toggle {
