@@ -12,3 +12,35 @@
        line-height: 1.5;
        margin: 0;
    }
+
+   .header {
+    box-shadow: rgb(51, 51, 51) 0px 0px 3px;
+    top: 0px;
+    will-change: top;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    margin-top: -20px;
+    background: rgb(24, 20, 32);
+}
+
+.nav__list {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav__item {
+    display: inline-block;
+    font-family: "Roboto Black";
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-transform: uppercase;
+    will-change: padding-bottom;
+    padding: 0.5rem 1rem 0.25rem;
+    transition: padding-bottom 100ms ease 0s;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
