@@ -42,11 +42,9 @@ layout: default
         <div class="{{ item_type }}__entry-title {{ item_type }}__entry-title--{{ page_type }}"><a href="{{ site.baseurl }}{{ item.url }}"{{ outbound_link_flag }}>{{ item.title }}</a>
         {% if item.teaser %} <div class="{{ item_type }}__entry-teaser {{ item_type }}__entry-teaser--{{ page_type }}">
 
-          {% for post in site.posts limit 4 %}
           <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-              {{ post.content | strip_html | truncatewords:75}}<br>
+              {{ post.content | truncatewords:75}}<br>
                   <a href="{{ post.url }}">Read more...</a><br><br>
-          {% endfor %}
 
         </div> {% endif %}
         </div>
