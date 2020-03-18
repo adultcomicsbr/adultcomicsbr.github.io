@@ -23,7 +23,7 @@ layout: default
 <main class="post {{ page_type }}" role="main">
 
   <ul class="post__list {{ page_type }}">
-          {% for post in site.posts limit 5 %}
+          {% for post in site.posts limit 2 %}
           <li class="post__entry {{ page_type }}">
 
             <time class="posts__entry-date {{ page_type }}" datetime="{{ post.date | date_to_xmlschema }}">
