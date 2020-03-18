@@ -1,13 +1,9 @@
 html { font-size: 16px; } // define “root-em” (rem) size
 
 body {
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAE0lEQVQIW2N48+bNfxhggLPwcgDQbi+YlZXTEQAAAABJRU5ErkJggg==');
+  background: url('');
   position: relative;
   min-height: 100vh;
-
-  // text styling
-  @include fontface;
-  @include fontweight;
   overflow-wrap: break-word; // force wider-than-viewport words to break
   line-height: 1.5;
 }
