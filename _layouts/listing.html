@@ -29,14 +29,13 @@ layout: default
             <time class="posts__entry-date {{ page_type }}" datetime="{{ post.date | date_to_xmlschema }}">
               {{ post.date | date: "%b %-d" }}</time>
 
-              <div class="posts__category {{ page_type }}">
-                {{ post.category }}</div>
+              <div class="posts__category {{ page_type }}">{{ post.category }}</div>
 
               <h1 class="post__entry-title {{ page_type }}">
                 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
               </h1>
 
-              <div class="post__content {{ page_type }}">{{ post.content | truncatewords:40}}</div><br>
+              <div class="post__content {{ page_type }}">{{ post.content | truncatewords:40 }}</div><br>
               <div class="post__jump"><a href="{{ post.url }}">LEIA MAIS</a></div>
           </li>
           {% endfor %}
