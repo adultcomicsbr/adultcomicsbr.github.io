@@ -8,30 +8,23 @@ body {
   line-height: 1.5;
 }
 
-h1 { @include heading(2); }
+h1 {
+}
 
-h2 { @include heading(1.6); @include edge($color: #ddd, $distance: 0.5rem); }
+h2 {
+}
 
-h3 { @include heading(1.4); }
+h3 {
+}
 
-h4 { @include heading(1.2); }
+h4 {
+}
 
 hr { display: none; }
 
-a {
-  color: #22953c; @include underline(#ddd);
-  &:visited { @include underline(#fff); }
-  &:hover   { @include underline(#96dba5); }
-  &:active  { @include highlight(#40867e) }
-}
 
-b, strong { @include fontweight(bold); }
-
-dfn { @extend b; font-style: normal; }
 
 mark {
-  @include fontweight(bold);
-  @include highlight(#33a84d);
   padding: 0 0.25rem;
 }
 
@@ -42,18 +35,13 @@ li {
 }
 
 code {
-  @include fontface(monospace);
-  @include underline($solarized_yellow);
-  background-color: $solarized_base3;
+  background-color: #1A1A1A;
   padding: 0.0625em 0.25em;
   font-size: 0.875em;
   border-radius: 0.25rem;
-
-  @include tablet-portrait-up { white-space: nowrap; } // wrap on small screens
 }
 
 pre { // code blocks
-  @include inset;
   font-size: 0.875rem;
 
   code { // override inline <code> rules
@@ -67,20 +55,14 @@ pre { // code blocks
 }
 
 blockquote {
-  @include fontface(serif);
   font-style: italic;
   font-size: 0.9375rem;
-  border: 1px dotted $solarized_yellow;
-  @include edge(left, 0.5rem, $solarized_yellow);
-  @include inset($background-color: $solarized_base3);
-  @include mobile-only { margin: 0; } // override browser default
+  border: 1px dotted #1A1A1A;
 
   em, cite, i { font-style: normal; }
 
-  mark { background-color: $solarized_yellow; color: $solarized_base3; }
+  mark { background-color: #1A1A1A; color: #A1A1A1; }
 
-  code { background-color: $solarized_base2; }
-
-  a:visited { @include underline($solarized_base3); }
+  code { background-color: #1A1A1A; }
 
 }
