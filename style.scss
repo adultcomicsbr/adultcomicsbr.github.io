@@ -85,3 +85,17 @@
 .posts__category:before {
     content: "[";
 }
+
+.post__entry-title {
+    margin-top: 0px;
+    font-size: 45px;
+    font-family: Roboto Black;
+}
+
+.post__entry-title a {
+    color: #181420;
+}
+
+.post__entry-title a:hover {
+    color: #973ef0;
+}
