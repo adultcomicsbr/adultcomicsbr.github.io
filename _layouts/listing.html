@@ -31,14 +31,14 @@ layout: default
   <ul class="post__list {{ page_type }}">
           {% for post in site.posts limit 5 %}
           <li class="post__entry {{ page_type }}">
-            <time class="posts__entry-date {{ page_type }}" datetime="{{ item.date | date_to_xmlschema }}">
-            {{ item.date | date: "%b %-d" }}
+            <time class="posts__entry-date {{ page_type }}" datetime="{{ item.date | date_to_xmlschema }}"></time>
+            {{ post.date | date: "%b %-d" }}
               <div class="post__entry-title {{ page_type }}">
                 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                   {{ post.content | truncatewords:40}}<br>
-             <a href="{{ post.url }}">LEIA MAIS</a><br>
-         </li>
-      {% endfor %}
+                <a href="{{ post.url }}">LEIA MAIS</a><br><br>
+          </li>
+          {% endfor %}
   </ul>
 </main>
 
