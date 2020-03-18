@@ -104,6 +104,10 @@
     padding-top: 0;
 }
 
+.posts__entry {
+    font-size: 20px;
+}
+
 .posts__entry-category {
     position: absolute;
     top: 1em;
@@ -128,6 +132,11 @@
     border-right-width: 1.5rem;
     font-family: Roboto;
     color: #444;
+}
+
+.posts__list.posts--home__list {
+    width: 750px;
+    list-style: none;
 }
 
 .colophon--home, .colophon--listing {
