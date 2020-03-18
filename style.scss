@@ -34,7 +34,6 @@
 }
 
 .nav__item {
-    display: inline-block;
     font-family: "Roboto Black";
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -49,6 +48,6 @@
 }
 
 .nav__item:hover {
-    padding-bottom: 1.1rem;
-    border-bottom: 0.4rem solid rgb(151, 62, 240);
+    padding-bottom: 1.3rem;
+    border-bottom: 0.5rem solid rgb(151, 62, 240);
 }
