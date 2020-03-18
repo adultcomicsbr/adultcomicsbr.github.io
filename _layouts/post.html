@@ -13,7 +13,7 @@ layout: default
     <ul class="post__list {{ page_type }}">
             <li class="post__entry {{ page_type }}">
               <div class="post__head">
-                <div class="posts__category {{ page_type }}">{{ page.category }}</div>
+                <a href="{{ site.baseurl }}/category/{{ page.category }}" class="posts__category {{ page_type }}">{{ page.category }}</a>
                 <h1 class="post__entry-title {{ page_type }}">{{ page.title }}</h1>
                 <time class="posts__entry-date {{ page_type }}" datetime="{{ page.date | date_to_xmlschema }}">
                   {{ page.date | date: "%b %-d %Y" }}</time>
@@ -22,7 +22,6 @@ layout: default
                 <div class="post__content {{ page_type }}">{{ content }}</div><br>
 
             <div class="post__labels">
-                {% if page.category %} <a href="{{ site.baseurl }}/category/{{ page.category }}" class="post__category">{{ page.category }}</a>{% endif %}
                 {% if page.tags %}{% for tag in page.tags %} <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post__tag">{{ tag }}</a>{% endfor %}{% endif %}
             </div>
 
