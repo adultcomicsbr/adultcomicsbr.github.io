@@ -26,31 +26,20 @@ layout: default
 
 {% endif %}
 
-<main class="{{ item_type }} {{ item_type }}--{{ page_type }}" role="main">
-  <h2 class="{{ item_type }}__heading {{ item_type }}--{{ page_type }}__heading">{{ page.title }}</h2>
+<main class="post post--{{ page_type }}" role="main">
+  <h2 class="post__heading post--{{ page_type }}__heading">{{ page.title }}</h2>
 
-  <ul class="{{ item_type }}__list {{ item_type }}--{{ page_type }}__list">
-    {% for item in pool %}
-      <li class="{{ item_type }}__entry {{ item_type }}--{{ page_type }}__entry">
-        {% if item_type == 'posts' %}
-          <time class="posts__entry-date posts__entry-date--{{ page_type }}" datetime="{{ item.date | date_to_xmlschema }}">
+  <ul class="post__list post--{{ page_type }}__list">
+          {% for post in site.posts limit 5 %}
+          <li class="post__entry post--{{ page_type }}__entry">
+            <time class="posts__entry-date posts__entry-date--{{ page_type }}" datetime="{{ item.date | date_to_xmlschema }}">
             {{ item.date | date: "%b %-d" }}
-          </time>
-        {% elsif item_type == 'projects' %}
-          <span class="projects__entry-role">{{ item.role }}</span>
-        {% endif %}
-        <div class="{{ item_type }}__entry-title {{ item_type }}__entry-title--{{ page_type }}"><a href="{{ site.baseurl }}{{ item.url }}"{{ outbound_link_flag }}>{{ item.title }}</a>
-        {% if item.teaser %} <div class="{{ item_type }}__entry-teaser {{ item_type }}__entry-teaser--{{ page_type }}">
-
-          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-              {{ post.content | truncatewords:75}}<br>
-                  <a href="{{ post.url }}">Read more...</a><br><br>
-
-        </div> {% endif %}
-        </div>
-        {% if item.category %} <div class="{{ item_type }}__entry-category {{ item_type }}__entry-category--{{ page_type }}">{{ item.category }}</div> {% endif %}
-      </li>
-    {% endfor %}
+              <div class="post__entry-title post__entry-title--{{ page_type }}">
+                <a href="{{ site.baseurl }}{{ post.url }}"{{ outbound_link_flag }}>{{ post.title }}</a>
+                  {{ post.content | truncatewords:75}}<br>
+             <a href="{{ post.url }}">LEIA MAIS</a><br>
+         </li>
+      {% endfor %}
   </ul>
 </main>
 
