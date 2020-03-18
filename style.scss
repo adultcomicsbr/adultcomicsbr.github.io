@@ -131,8 +131,7 @@
     }
 
     > h1 {
-      text-align: right;
-      right: 50%;
+      left: 50%;
       margin-right: 6.5rem;
       font-size: 6.5vw;
       line-height: inherit;
@@ -453,7 +452,6 @@
     border-right-width: 1.5rem;
     @include fontface(serif);
     color: #444;
-    text-align: right;
   }
 }
 
@@ -461,7 +459,6 @@
   @include mobile-only {
     font-style: italic;
     float: left;
-    text-align: right;
     width: 3.25rem;
     line-height: 1.875rem;
     margin-right: 0.5rem;
@@ -511,7 +508,6 @@
 }
 .posts__entry-category {
   @include mobile-only {
-    text-align: right;
     margin: auto;
     margin-top: 0.5rem;
     padding-right: 1.75rem;
