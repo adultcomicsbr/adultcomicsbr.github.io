@@ -104,8 +104,21 @@
     padding-top: 0;
 }
 
+.posts__entry-category {
+    position: absolute;
+    top: 1em;
+    color: #973ef0;
+    font-size: xx-large;
+    font-family: Roboto black;
+}
 
+.posts__entry-category:after {
+    content: "]";
+}
 
+.posts__entry-category:before {
+    content: "[";
+}
 .posts__entry, .projects__entry {
     margin: 2rem 0;
     position: relative;
