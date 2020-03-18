@@ -35,6 +35,8 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    max-width: 750px;
+    min-width: 750px;
 }
 
 .header--home, .header--listing {
@@ -139,6 +141,7 @@
 .posts__list.posts--home__list {
     width: 750px;
     list-style: none;
+    padding: 0;
 }
 
 .colophon--home, .colophon--listing {
