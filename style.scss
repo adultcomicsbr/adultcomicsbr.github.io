@@ -70,6 +70,7 @@
 
 .posts__entry-date {
     float: right;
+    font-weight: 900;
 }
 
 .posts__category {
@@ -98,4 +99,9 @@
 
 .post__entry-title a:hover {
     color: #973ef0;
+}
+
+.post__content p {
+    font-family: Montserrat;
+    font-size: 20px;
 }
