@@ -1,18 +1,12 @@
 ---
-title: Welcome to Solana
-teaser: These sample posts are provided as a template for creating your own content.
-category: INTRO
-tags: [markdown, workflow, foss]
+title: Apartamento 609
+category: COMIC
+tags: [comic, braeburned, 609]
+autor: Braeburned
 ---
 
-GitHub Pages uses a Markdown engine called <dfn>kramdown</dfn> for formatting text posts. kramdown is a superset of Markdown, meaning:
+!(https://i.imgur.com/yTDE0gI.jpg)
 
-1. anything that’s valid Markdown is also valid kramdown, and
-2. it provides and strictly specifies a number of features that are not available in Markdown.[^1]
-
-Consult the official [kramdown syntax reference][kds] for an exhaustive list of features and how to use them.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ---
-
-[^1]:
-    Such as footnotes.
