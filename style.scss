@@ -132,3 +132,18 @@
     color: white !important;
     background: #5900b3 !important;
 }
+
+.post__labels {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.post__labels a:before {
+    content: "[";
+}
+
+.post__labels a:after {
+    content: "]";
+}
