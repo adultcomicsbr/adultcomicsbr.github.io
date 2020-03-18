@@ -304,27 +304,26 @@
 }
 
 .nav__item {
-  @include tablet-portrait-down {
-    display: list-item;
-    font-size: 1.2rem;
-    line-height: 3.75rem;
-    padding-left: 4.2rem;
-    @include bgicon($size: 1.5rem 1.5rem, $position: 1.5rem 1.1rem);
-    pointer-events: auto;
-
-    {% for item in site.nav_menu %}
-      &--{{ item.name | downcase }} { background-image: url("{{ site.baseurl }}{{ item.icon }}"); }
-    {% endfor %}
+    display: inline-block;
+    font-family: "Roboto Black";
+    color: #FFF;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    padding-bottom: .25rem;
+    transition: padding-bottom 100ms;
+    will-change: padding-bottom;
+    border: none;
 
     &, &:link, &:visited, &:hover {
-      color: #555;
+      color: #f1f1f1;
       text-decoration: none;
       border: none;
     }
 
     &:active {
       color: #fff;
-      background-color: #40867e;
+      background-color: #973EF0;
 
       {% for item in site.nav_menu %}
 	&.nav__item--{{ item.name | downcase }} { background-image: url("{{ item.icon }}_white"); }
@@ -332,16 +331,7 @@
     }
   }
 
-  @include tablet-landscape-up {
-    display: inline-block;
-    @include fontface(sans-serif);
-    @include fontweight(bold, sans-serif);
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
-    @include transition(padding-bottom, 0.25rem, 100ms);
-    border: none;
-
-    &:hover { padding-bottom: 0.5rem; border-bottom: 0.25rem solid #40867e; }
+    &:hover { padding-bottom: 1.1rem; border-bottom: 0.4rem solid #973EF0; }
     &:last-child { margin-right: 0; }
 
   }
