@@ -16,7 +16,7 @@ layout: default
                 <a href="{{ site.baseurl }}/category/{{ page.category }}" class="posts__category {{ page_type }}">{{ page.category }}</a>
                 <h1 class="post__entry-title {{ page_type }}">{{ page.title }}</h1>
                 <time class="posts__entry-date post" datetime="{{ page.date | date_to_xmlschema }}">
-                  {{ page.date | date: "%b %-d %Y" }}</time>
+                  {{ page.date | date: "%b %-d - %Y" }}</time>
               </div>
 
                 <div class="post__content {{ page_type }}">{{ content }}</div><br>
