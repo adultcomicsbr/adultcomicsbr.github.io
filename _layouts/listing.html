@@ -34,8 +34,8 @@ layout: default
             <time class="posts__entry-date {{ page_type }}" datetime="{{ item.date | date_to_xmlschema }}">
             {{ item.date | date: "%b %-d" }}
               <div class="post__entry-title {{ page_type }}">
-                <a href="{{ site.baseurl }}{{ post.url }}"{{ outbound_link_flag }}>{{ post.title }}</a>
-                  {{ post.content | truncatewords:20}}<br>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                  {{ post.content | truncatewords:40}}<br>
              <a href="{{ post.url }}">LEIA MAIS</a><br>
          </li>
       {% endfor %}
