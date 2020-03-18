@@ -71,6 +71,9 @@
 .posts__entry-date {
     float: right;
     font-weight: 900;
+    position: absolute;
+    margin-top: -125px;
+    right: 3.5em;
 }
 
 .posts__category {
