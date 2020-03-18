@@ -9,18 +9,17 @@ layout: default
 {% endcapture %}
 
 <main class="post" role="main">
-  <div class="post__head">
-    <h1 class="post__entry-title {{ page_type }}">{{ page.title }}</h1>
-    <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}"> {{ pretty_date }} </time>
-    <div class="post__labels">
-    {% if page.category %} <a href="{{ site.baseurl }}/category/{{ page.category }}" class="post__category">{{ page.category }}</a>{% endif %}
-    {% if page.tags %}{% for tag in page.tags %} <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post__tag">{{ tag }}</a>{% endfor %}{% endif %}
-    </div>
-  </div>
 
     <ul class="post__list {{ page_type }}">
             <li class="post__entry {{ page_type }}">
-
+              <div class="post__head">
+                <h1 class="post__entry-title {{ page_type }}">{{ page.title }}</h1>
+                <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}"> {{ pretty_date }} </time>
+                <div class="post__labels">
+                {% if page.category %} <a href="{{ site.baseurl }}/category/{{ page.category }}" class="post__category">{{ page.category }}</a>{% endif %}
+                {% if page.tags %}{% for tag in page.tags %} <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post__tag">{{ tag }}</a>{% endfor %}{% endif %}
+                </div>
+              </div>
               <time class="posts__entry-date {{ page_type }}" datetime="{{ page.date | date_to_xmlschema }}">
                 {{ page.date | date: "%b %-d" }}</time>
 
