@@ -27,6 +27,8 @@ layout: default
           <li class="post__entry {{ page_type }}">
             <time class="posts__entry-date {{ page_type }}" datetime="{{ post.date | date_to_xmlschema }}">
               {{ post.date | date: "%b %-d" }}</time>
+              <div class="posts__category {{ page_type }}">
+                {{ post.category }}</div>
               <div class="post__entry-title {{ page_type }}">
                 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                   {{ post.content | truncatewords:40}}
